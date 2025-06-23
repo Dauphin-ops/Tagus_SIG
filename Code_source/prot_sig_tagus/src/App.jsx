@@ -5,6 +5,7 @@ import Carte_v from './pages/carte-0';
 import MapPage from './pages/carte-1';
 // import Sidebar from './components/side-bar';
 import Login from './pages/login';
+import Footer from './components/footer';
 
 export default function App() {
   return (
@@ -18,6 +19,8 @@ export default function App() {
         <Route path="/map 0" element={<Carte_v />} />
         <Route path="/log" element={<Login />} />
       </Routes>
+
+      <Footer/>
 
     </Router>
   );
