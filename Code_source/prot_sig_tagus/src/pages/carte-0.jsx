@@ -2,7 +2,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { useEffect, useState } from 'react';
 import 'leaflet/dist/leaflet.css';
 
-function Carte_v() {
+function Carte_0() {
   const [locations, setLocations] = useState([]);
 
   useEffect(() => {
@@ -26,5 +26,5 @@ function Carte_v() {
   );
 }
 
-export default Carte_v;
+export default Carte_0;
 

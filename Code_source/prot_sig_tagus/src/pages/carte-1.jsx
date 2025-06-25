@@ -11,7 +11,7 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
 });
 
-export default function MapPage() {
+export default function Carte_1() {
   const [markers, setMarkers] = useState([
     { id: 1, name: "Université de Douala", position: [4.05, 9.7] },
     { id: 2, name: "Université de Yaoundé I", position: [3.8667, 11.5167] },

@@ -1,19 +1,24 @@
+import { Link } from "react-router-dom";
+
 import OptionImpair from "../components/option-impair";
 import OptionPair from "../components/option-pair";
-import { Link } from "react-router-dom";
+import Navbar from "../components/nav-bar";
+import Footer from "../components/footer";
 
 export default function Home() {
     return (
-      <div className='flex m-5'>
-        <div className='container text-center align-items-center m-10 p-5'>
-            <h1>Bienvenue sur TagusWebMap</h1>
-            <p>Explorez les données géographiques du Cameroun à travers une carte interactive.</p>
+      <>
+        <Navbar/>
+        <div className='container text-center align-items-center p-5 m-10 '>
+            <h1><strong>La visualisation en un clic</strong></h1>
+            <p>TagusWebMap vous propose d'explorer les données géographiques du Cameroun à travers une carte interactive.</p>
         </div>
-        <div className="continer m-5">
+        <div className="container align-items-center">
           <div><Link to="/map 1"><OptionImpair/></Link></div>
           <div><Link to="/en savoir plus"><OptionPair/></Link></div>
           <div><Link to="/"><OptionImpair/></Link></div>
         </div>
-      </div>
+        <Footer/>
+      </>
     );
   }

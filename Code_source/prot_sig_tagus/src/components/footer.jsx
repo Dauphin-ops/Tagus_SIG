@@ -3,10 +3,10 @@ import { Container, Row, Col } from 'react-bootstrap';
 export default function Footer() {
   return (
     <footer className="bg-dark text-white mt-5 py-4">
-      <Container>
+      <Container className='mt-5'>
         <Row>
           <Col md={4}>
-            <h5>GeoView</h5>
+            <h5>TagusWebMap</h5>
             <p>Plateforme de visualisation cartographique connectée à PostgreSQL/PostGIS.</p>
           </Col>
           <Col md={4}>
