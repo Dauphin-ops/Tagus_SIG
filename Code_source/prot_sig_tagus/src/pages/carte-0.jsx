@@ -2,6 +2,9 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { useEffect, useState } from 'react';
 import 'leaflet/dist/leaflet.css';
 
+import Navbar from '../components/nav-bar';
+import Footer from '../components/footer';
+
 function Carte_0() {
   const [locations, setLocations] = useState([]);
 
@@ -12,6 +15,11 @@ function Carte_0() {
   }, []);
 
   return (
+    <>
+{/* Composant barre de navigation */}
+    <Navbar/>
+
+{/* Page de visualisation de la carte 1 */}
     <MapContainer center={[4.05, 9.7]} zoom={6} style={{ height: '100vh' }}>
       <TileLayer
         attribution="&copy; OpenStreetMap contributors"
@@ -23,6 +31,10 @@ function Carte_0() {
         </Marker>
       ))}
     </MapContainer>
+
+{/* Composant pieds de page  */}
+      <Footer/>
+    </>
   );
 }
 

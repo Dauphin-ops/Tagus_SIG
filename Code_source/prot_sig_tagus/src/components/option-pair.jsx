@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const OptionPair = () => {
+const OptionPair = ({title,message,imag}) => { 
   const [isHovered, setIsHovered] = useState(false);
 
   const imageStyle = {
@@ -17,10 +17,9 @@ const OptionPair = () => {
     
         {/* Texte */}
         <div className="col-md-6 text-end">
-          <h2 className="mb-3">Titre accrocheur</h2>
+          <h2 className="mb-3">{title}</h2>
           <p>
-            Voici une image avec un style inline en React. Lorsque tu passes la souris dessus,
-            elle s'agrandit et devient plus lumineuse.
+            {message}
           </p>
           <a href="#" className="btn btn-primary">En savoir plus</a>
         </div>
@@ -28,7 +27,7 @@ const OptionPair = () => {
         {/* Image */}
         <div className="col-md-4 mb-0 mb-md-0">
           <img
-            src="./src/assets/react.svg"
+            src={imag}
             alt="Image"
             style={imageStyle}
             onMouseEnter={() => setIsHovered(true)}

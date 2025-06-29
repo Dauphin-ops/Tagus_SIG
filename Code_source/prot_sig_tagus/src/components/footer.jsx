@@ -2,7 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 export default function Footer() {
   return (
-    <footer className="bg-dark text-white mt-5 py-4">
+      <footer className=" text-white mt-5 py-4" style={{ backgroundColor: 'rgb(113, 113, 113)'}}>
       <Container className='mt-5'>
         <Row>
           <Col md={4}>
@@ -15,17 +15,18 @@ export default function Footer() {
               <li><a href="/" className="text-white">Accueil</a></li>
               <li><a href="/map" className="text-white">Carte</a></li>
               <li><a href="/login" className="text-white">Connexion</a></li>
-              {/* <li><a href="/register" className="text-white">Inscription</a></li> */}
+              <li><a href="/login" className="text-white">Inscription</a></li>
             </ul>
           </Col>
           <Col md={4}>
             <h5>Contact</h5>
-            <p>Email : contact@geoview.app</p>
-            <p>Université XYZ, Cameroun</p>
+            <p>Tel : 6-73-36-57-66 / 6-57-87-16-46</p>
+            <p>Email : dauphin.tsague@2028.ucac-icam.com</p>
+            <p>Université UCAC-ICAM Douala, Cameroun</p>
           </Col>
         </Row>
         <hr className="border-light" />
-        <p className="text-center">&copy; {new Date().getFullYear()} GeoView. Tous droits réservés.</p>
+        <p className="text-center">&copy; {new Date().getFullYear()} TagusWebMap. Tous droits réservés.</p>
       </Container>
     </footer>
   );
